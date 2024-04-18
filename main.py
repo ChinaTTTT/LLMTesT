@@ -8,5 +8,5 @@ model_revision = "af0f99b"  # 这是模型的具体修订哈希，确保使用�
 classifier = pipeline('sentiment-analysis', model=model_name, revision=model_revision)
 
 # 进行预测
-result = classifier("Water is transparent, like your heart")[0]
+result = classifier("What is love? Baby don't hurt me")[0]
 print(f"label: {result['label']}, with score: {result['score']:.4f}")
